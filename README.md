@@ -97,9 +97,9 @@ This project documents the installation and configuration of **Vagrant** (with O
 
 **Note:** Running `vagrant` commands *inside* the guest VM fails with “command not found” because Vagrant is installed on the host, not inside the virtual machine. This is expected behavior.
 
-![Vagrantfile with ubuntu/jammy64 + terminal showing vagrant command not found inside guest, exit, and vagrant destroy on the host](Screenshot%202026-08-05%20171236.png)
+Here is the actual terminal session showing the `Vagrantfile`, the failed command inside the guest, the exit, and the successful `vagrant destroy` from the Windows host:
 
-*The screenshot above shows the configured `Vagrantfile` (box set to `ubuntu/jammy64`) together with the terminal session: attempting `vagrant halt` inside the guest (fails as expected), exiting the guest, and running `vagrant destroy` from the Windows host.*
+![Vagrantfile with ubuntu/jammy64 + terminal showing vagrant command not found inside guest, exit, and vagrant destroy on the host](Screenshot%202026-08-05%20171236.png)
 
 ---
 
@@ -127,24 +127,4 @@ I successfully:
 
 This practical helped me understand the basic workflow of using **Vagrant** to create, configure, and manage virtual machines.
 
-All screenshots referenced above are stored in the root of this repository and are embedded using standard Markdown image syntax so they display correctly on GitHub.
-
----
-
-## How the screenshots are referenced (for future reference)
-
-In Markdown, images are referenced with the following syntax:
-
-```markdown
-![Descriptive alt text](relative/path/to/image.jpg)
-```
-
-- The `!` makes it an image instead of a normal link.
-- The text inside `[]` is the **alt text** (important for accessibility and when the image cannot load).
-- The path inside `()` is relative to the Markdown file. Spaces in filenames are encoded as `%20`.
-
-Example used in this document:
-
-```markdown
-![Vagrantfile with ubuntu/jammy64 + terminal showing destroy session](Screenshot%202026-08-05%20171236.png)
-```
+The screenshots above are stored in the root of this repository and are embedded directly in the steps so they appear in context when viewing the README on GitHub.
