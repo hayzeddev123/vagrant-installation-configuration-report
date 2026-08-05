@@ -43,7 +43,7 @@ This project documents the installation and configuration of **Vagrant** (with O
 4. Enabled **shell provisioning** to automatically install the Apache web server when the virtual machine is created.
 5. Saved the `Vagrantfile` after making the required changes.
 
-![Vagrantfile showing config.vm.box = "ubuntu/jammy64" and terminal session](images/Screenshot%202026-08-05%20171236.png)
+![Vagrantfile showing config.vm.box = "ubuntu/jammy64" and terminal session](Screenshot%202026-08-05%20171236.png)
 
 ---
 
@@ -105,7 +105,7 @@ This project documents the installation and configuration of **Vagrant** (with O
 
 For complete and up-to-date information, always refer to the official HashiCorp Vagrant documentation:
 
-![HashiCorp Developer Vagrant landing page – Development Environments Made Easy](images/Screenshot%202026-08-05%20171559.png)
+![HashiCorp Developer Vagrant landing page – Development Environments Made Easy](Screenshot%202026-08-05%20171559.png)
 
 - Official site: [https://developer.hashicorp.com/vagrant](https://developer.hashicorp.com/vagrant)
 - Installation guide: [https://developer.hashicorp.com/vagrant/docs/installation](https://developer.hashicorp.com/vagrant/docs/installation)
@@ -125,7 +125,7 @@ I successfully:
 
 This practical helped me understand the basic workflow of using **Vagrant** to create, configure, and manage virtual machines.
 
-All screenshots referenced above are stored in the `images/` folder of this repository and are embedded using standard Markdown image syntax so they display correctly on GitHub.
+All screenshots referenced above are stored in the root of this repository and are embedded using standard Markdown image syntax so they display correctly on GitHub.
 
 ---
 
@@ -144,5 +144,5 @@ In Markdown, images are referenced with the following syntax:
 Example used in this document:
 
 ```markdown
-![Vagrantfile showing config.vm.box = "ubuntu/jammy64" and terminal session](images/Screenshot%202026-08-05%20171236.png)
+![Vagrantfile showing config.vm.box = "ubuntu/jammy64" and terminal session](Screenshot%202026-08-05%20171236.png)
 ```
