@@ -6,8 +6,10 @@ This makes the documentation a self-contained step-by-step tutorial that display
 
 ## Available Screenshots
 
-### 1. Vagrantfile + Terminal Session
-![Vagrantfile showing config.vm.box = "ubuntu/jammy64" and terminal session](Screenshot%202026-08-05%20171236.png)
+### 1. Vagrantfile + Destroy Terminal Session
+**Location in README:** Section 5 – Destroying the Virtual Machine
+
+![Vagrantfile with ubuntu/jammy64 + terminal showing vagrant command not found inside guest, exit, and vagrant destroy on the host](Screenshot%202026-08-05%20171236.png)
 
 **File:** `Screenshot 2026-08-05 171236.png`
 
@@ -18,6 +20,8 @@ This makes the documentation a self-contained step-by-step tutorial that display
 - `vagrant destroy` run from the Windows host (PowerShell)
 
 ### 2. Official HashiCorp Vagrant Documentation Page
+**Location in README:** Section 6 – Official Vagrant Documentation Reference
+
 ![HashiCorp Developer Vagrant landing page – Development Environments Made Easy](Screenshot%202026-08-05%20171559.png)
 
 **File:** `Screenshot 2026-08-05 171559.png`

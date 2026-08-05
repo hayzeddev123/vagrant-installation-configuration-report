@@ -43,8 +43,6 @@ This project documents the installation and configuration of **Vagrant** (with O
 4. Enabled **shell provisioning** to automatically install the Apache web server when the virtual machine is created.
 5. Saved the `Vagrantfile` after making the required changes.
 
-![Vagrantfile showing config.vm.box = "ubuntu/jammy64" and terminal session](Screenshot%202026-08-05%20171236.png)
-
 ---
 
 ### 3. Creating and Starting the Virtual Machine
@@ -97,7 +95,11 @@ This project documents the installation and configuration of **Vagrant** (with O
 
 3. Confirmed the operation by typing `y` when prompted. This removed the virtual machine while keeping the Vagrant project files and the downloaded Ubuntu box.
 
-**Note:** Running `vagrant` commands *inside* the guest VM fails with “command not found” because Vagrant is installed on the host, not inside the virtual machine. This is expected behavior (as shown in the screenshot above).
+**Note:** Running `vagrant` commands *inside* the guest VM fails with “command not found” because Vagrant is installed on the host, not inside the virtual machine. This is expected behavior.
+
+![Vagrantfile with ubuntu/jammy64 + terminal showing vagrant command not found inside guest, exit, and vagrant destroy on the host](Screenshot%202026-08-05%20171236.png)
+
+*The screenshot above shows the configured `Vagrantfile` (box set to `ubuntu/jammy64`) together with the terminal session: attempting `vagrant halt` inside the guest (fails as expected), exiting the guest, and running `vagrant destroy` from the Windows host.*
 
 ---
 
@@ -144,5 +146,5 @@ In Markdown, images are referenced with the following syntax:
 Example used in this document:
 
 ```markdown
-![Vagrantfile showing config.vm.box = "ubuntu/jammy64" and terminal session](Screenshot%202026-08-05%20171236.png)
+![Vagrantfile with ubuntu/jammy64 + terminal showing destroy session](Screenshot%202026-08-05%20171236.png)
 ```
